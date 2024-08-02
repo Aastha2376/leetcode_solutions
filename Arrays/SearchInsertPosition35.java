@@ -6,9 +6,9 @@ public class SearchInsertPosition35 {
             int low = 0;
             
             // binary search loop
-            //whylow<=high?
+            
             while (low <=high) {
-                // dont put outer brackets like(low+(high-low))/2 it says time limit exceeded
+                
                 int mid = low + (high - low) / 2;
                 if (nums[mid] == target) {
                     return mid;
