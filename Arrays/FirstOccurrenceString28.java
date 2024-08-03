@@ -9,7 +9,7 @@ public class FirstOccurrenceString28 {
             
         }
     }
-    //Brute force
+    //Brute force method
     
     // class Solution {
     //     public int strStr(String haystack, String needle) {
