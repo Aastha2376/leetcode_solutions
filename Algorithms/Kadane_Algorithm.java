@@ -17,7 +17,7 @@ public class Kadane_Algorithm {
         public static void main(String[] args) {
             int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
             int maxSum = maxSubArraySum(arr);
-            System.out.println("Maximum sum of contigous subarray is  " + maxSum); // Output will be 6
+            System.out.println("Maximum sum of contigous subarray is : " + maxSum); // Output will be 6
         }
     }
     
