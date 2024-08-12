@@ -1,4 +1,5 @@
 package leetcode_solutions.Algorithms;
+//time complexity of O(n)
 
 public class Kadane_Algorithm {
     public class KadanesAlgorithm {
