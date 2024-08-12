@@ -41,8 +41,11 @@ public class RansomNote383 {
 
     }
 }
+}
 
 // better way but still same time complexity 
+
+
 // public class Solution {
 //     public boolean canConstruct(String ransomNote, String magazine) {
 //         HashMap<Character, Integer> charCountMap = new HashMap<>();
@@ -50,7 +53,12 @@ public class RansomNote383 {
 //         // Fill charCountMap with character counts from magazine
 //         for (int i = 0; i < magazine.length(); i++) {
 //             char ch = magazine.charAt(i);
-//             charCountMap.put(ch, charCountMap.getOrDefault(ch, 0) + 1);
+//             // Manually handle key presence and update counts
+//             if (charCountMap.containsKey(ch)) {
+//                 charCountMap.put(ch, charCountMap.get(ch) + 1);
+//             } else {
+//                 charCountMap.put(ch, 1);
+//             }
 //         }
 
 //         // Check against ransomNote
@@ -59,7 +67,8 @@ public class RansomNote383 {
 //             if (!charCountMap.containsKey(ch) || charCountMap.get(ch) == 0) {
 //                 return false; // If character not present or exhausted in magazine
 //             }
-//             charCountMap.put(ch, charCountMap.get(ch) - 1); // Decrement the count
+//             // Manually update count
+//             charCountMap.put(ch, charCountMap.get(ch) - 1);
 //         }
 
 //         return true;
@@ -67,5 +76,3 @@ public class RansomNote383 {
 
     
 // }
-
-}
