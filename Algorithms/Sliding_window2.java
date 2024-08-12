@@ -20,6 +20,19 @@ public class Sliding_window2 {
                     windowStart++; // Move the start of the window to the right
                 }
             }
+            // for equal to...
+            // for (int windowEnd = 0; windowEnd < arr.length; windowEnd++) {
+            //     windowSum += arr[windowEnd]; // Add the next element to the window
+    
+            //     // Check if the current window's sum equals the target
+            //     while (windowSum >= target) {
+            //         if (windowSum == target) {
+            //             minLength = Math.min(minLength, windowEnd - windowStart + 1);
+            //         }
+            //         windowSum -= arr[windowStart]; // Remove the element going out of the window
+            //         windowStart++; // Move the start of the window to the right
+            //     }
+            // }
     
             return (minLength == Integer.MAX_VALUE) ? 0 : minLength;
         }
