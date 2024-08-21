@@ -34,6 +34,7 @@ public class Fractional_Knapsack {
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (ratios[j] < ratios[j + 1]) {
+                    // all swapped because repective ratios have respective weights and profits
                     // Swap weights
                     double temp = weights[j];
                     weights[j] = weights[j + 1];
