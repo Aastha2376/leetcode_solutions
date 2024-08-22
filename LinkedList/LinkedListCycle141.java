@@ -13,7 +13,33 @@ public class LinkedListCycle141 {
          next = null;
      }
  }
- 
+//  public class Solution {
+//     public boolean hasCycle(ListNode head) {
+//         // Edge case: if the list is empty or has only one node, there can't be a cycle
+//         if (head == null || head.next == null) {
+//             return false;
+//         }
+        
+//         // Initialize two pointers, slow and fast
+//         ListNode slow = head;
+//         ListNode fast = head;
+        
+//         // Traverse the list
+//         while (fast != null && fast.next != null) {
+//             slow = slow.next;           // Move slow pointer by one step
+//             fast = fast.next.next;      // Move fast pointer by two steps
+            
+//             // If slow and fast meet, a cycle is detected
+//             if (slow == fast) {
+//                 return true;
+//             }
+//         }
+        
+//         // If we reach the end of the list, there's no cycle
+//         return false;
+//     }
+// }
+
 
 
 public class Solution {
@@ -51,3 +77,4 @@ public class Solution {
 }
 
 }
+
